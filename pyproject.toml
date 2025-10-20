@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "audittrail"
-version = "1.0"
+version = "1.0.1"
 description = "Production-ready tamper-proof audit trail library with digital signatures, WORM protection, and compliance reporting for Python web frameworks."
 authors = [{ name = "Ethan P. Bonsall", email = "ethan.bonsall.dev@gmail.com" }]
 license = { text = "MIT" }
