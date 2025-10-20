@@ -1,0 +1,40 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+
+# Build / packaging
+*.egg-info/
+dist/
+build/
+
+# SQLite databases & logs
+*.db
+*.sqlite3
+logs.csv
+
+# Test / coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Test / demo scripts
+test_app.py
+
+# Environment / config
+.env
+*.log
