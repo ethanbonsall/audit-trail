@@ -4,12 +4,37 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "audittrail"
-version = "0.1.0"
-description = "A lightweight, tamper-proof audit trail library for Python web frameworks."
+version = "1.0.0"
+description = "Production-ready tamper-proof audit trail library with digital signatures, WORM protection, and compliance reporting for Python web frameworks."
 authors = [{ name = "Ethan P. Bonsall", email = "ethan.bonsall.dev@gmail.com" }]
 license = { text = "MIT" }
-dependencies = ["click", "fastapi", "starlette",  "cryptography", "tabulate"]
+dependencies = ["click", "fastapi", "starlette", "cryptography", "tabulate"]
 requires-python = ">=3.8"
+readme = "README.md"
+keywords = ["audit", "logging", "compliance", "security", "tamper-proof", "blockchain", "WORM", "signatures", "SOX", "HIPAA", "PCI-DSS"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Healthcare Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: System :: Logging",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/ethanbonsall/audittrail-py"
+Documentation = "https://github.com/ethanbonsall/audittrail-py#readme"
+Repository = "https://github.com/ethanbonsall/audittrail-py"
+Issues = "https://github.com/ethanbonsall/audittrail-py/issues"
+Changelog = "https://github.com/ethanbonsall/audittrail-py/blob/main/CHANGELOG.md"
 
 [project.scripts]
 audittrail = "audittrail.cli:cli"
