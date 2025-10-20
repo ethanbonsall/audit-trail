@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audittrail"
+version = "0.1.0"
+description = "A lightweight, tamper-proof audit trail library for Python web frameworks."
+authors = [{ name = "Ethan P. Bonsall", email = "ethan.bonsall.dev@gmail.com" }]
+license = { text = "MIT" }
+dependencies = ["click", "fastapi", "starlette",  "cryptography", "tabulate"]
+requires-python = ">=3.8"
+
+[project.scripts]
+audittrail = "audittrail.cli:cli"

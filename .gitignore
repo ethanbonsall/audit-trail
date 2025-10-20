@@ -1,40 +1,44 @@
-# Byte-compiled / cache files
+# --- Python ---
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-*$py.class
-
-# Virtual environments
-.venv/
-venv/
-env/
-
-# OS files
-.DS_Store
-
-# IDE files
-.vscode/
-.idea/
-
-# Build / packaging
 *.egg-info/
+*.egg
 dist/
 build/
 
-# SQLite databases & logs
+# --- Virtual Environments ---
+venv/
+.env/
+.venv/
+
+# --- Local Databases ---
 *.db
-*.sqlite3
-logs.csv
 
-# Test / coverage
-.coverage
-.pytest_cache/
-htmlcov/
-
-# Test / demo scripts
-test_app.py
-
-# Environment / config
-.env
+# --- Logs and Exports ---
 *.log
+*.csv
+*.json
+
+# --- Test and Demo Files ---
+test_app.py
+test_all.sh
+bank_ledger.db
+audit_log.db
+audit_export.json
+audit_export.csv
+
+# --- Editor / OS Files ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# --- Secrets ---
+~/.audittrail.key
+
+# --- Coverage / Reports ---
+.coverage
+htmlcov/
+.pytest_cache/
