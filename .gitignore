@@ -20,6 +20,7 @@ venv/
 *.log
 *.csv
 *.json
+*.html
 
 # --- Test and Demo Files ---
 test_app.py
@@ -28,6 +29,8 @@ bank_ledger.db
 audit_log.db
 audit_export.json
 audit_export.csv
+compliance_report.json
+compliance_report.html
 
 # --- Editor / OS Files ---
 .DS_Store
@@ -35,8 +38,20 @@ audit_export.csv
 .vscode/
 *.swp
 
-# --- Secrets ---
+# --- Secrets & Keys ---
 ~/.audittrail.key
+~/.audittrail_keys/
+
+# --- Compliance Databases (local development) ---
+~/.audittrail_timestamps.db
+~/.audittrail_worm.db
+~/.audittrail_anomalies.db
+
+# --- RBAC & Auth (local development) ---
+~/.audittrail_users.json
+~/.audittrail_session.json
+~/.audittrail_cli_audit.db
+~/.audittrail_alerts.json
 
 # --- Coverage / Reports ---
 .coverage
